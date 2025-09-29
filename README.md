@@ -54,6 +54,8 @@ O objetivo principal é demonstrar o uso de **listas Lazy** (`LazyColumn` e `Laz
 - **Material 3**
 - **Gradle Kotlin DSL**
 
+## 📸 Demonstração (prints/telas)
+
 1. **Lista inicial sem filtro**  
    <img width="786" height="967" alt="Captura de tela tela inicial " src="https://github.com/user-attachments/assets/3af73bda-f9ee-4cc8-953e-4c69f1ca132c" />
 
