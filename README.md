@@ -41,7 +41,7 @@ O objetivo principal é demonstrar o uso de **listas Lazy** (`LazyColumn` e `Laz
 
 1. Clone este repositório:
    ```sh
-   git clone <url-do-repositorio>
+   git clone https://github.com/gstvMatos/fundamentos-jetpack-compose-listas-lazy
    ```
 2. Abra o projeto no Android Studio.
 3. Execute em um emulador ou dispositivo físico Android.
