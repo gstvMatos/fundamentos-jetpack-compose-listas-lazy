@@ -1,37 +1,35 @@
 # Fundamentos Jetpack Compose Listas Lazy
 
-Este projeto é um aplicativo Android desenvolvido em Kotlin, utilizando Jetpack Compose para a construção de interfaces modernas e reativas. O objetivo principal é demonstrar o uso de listas Lazy (LazyColumn e LazyRow) para exibir e filtrar jogos favoritos por estúdio.
+Este projeto é um aplicativo Android desenvolvido em **Kotlin**, utilizando **Jetpack Compose** para a construção de interfaces modernas e reativas.  
+O objetivo principal é demonstrar o uso de **listas Lazy** (`LazyColumn` e `LazyRow`) para exibir e filtrar jogos favoritos por estúdio.
+
+---
+
+## 👥 Integrantes da Equipe
+- Gustavo Matos – RM: 551268
+- Leonardo Franco – RM: 552528
+- Heitor Novaes – RM: 98342
+
+---
 
 ## Funcionalidades
 
-- Exibição de uma lista de jogos favoritos.
-- Filtro de jogos por nome do estúdio, via campo de texto ou seleção direta.
-- Lista horizontal de estúdios (StudioCard) para filtro rápido.
-- Botão de limpar filtro, exibido apenas quando um filtro está ativo.
-- Interface moderna utilizando Material 3.
+- Exibição de uma lista de jogos favoritos (`LazyColumn`).
+- Filtro de jogos por **nome do estúdio** via campo de texto.
+- Filtro de jogos por **seleção de estúdio** em lista horizontal (`LazyRow`).
+- Exibição de botão **“Limpar filtro”** sempre que um filtro estiver ativo.
+- Ao clicar no botão **“Limpar filtro”**, o filtro aplicado é removido.
+- Interface construída com **Material 3**.
 
-## Estrutura do Projeto
+## 🧱 Estrutura (resumo)
+- `app/src/main/java/.../MainActivity.kt` – ponto de entrada / composição da tela  
+- `components/GameCard.kt` – card de jogo  
+- `components/StudioCard.kt` – card de estúdio (usado na LazyRow)  
+- `model/Game.kt` – data class  
+- `repository/GameRepository.kt` – dados + filtro  
+- `ui/theme/` – tema Material 3
 
-```
-app/
- ├── src/
- │   ├── main/
- │   │   ├── java/
- │   │   │   └── carreiras/com/github/fundamentos_jetpack_compose_listas_lazy/
- │   │   │        ├── MainActivity.kt         # Tela principal e lógica de UI
- │   │   │        ├── components/
- │   │   │        │    ├── GameCard.kt       # Componente visual para jogos
- │   │   │        │    └── StudioCard.kt     # Componente visual para estúdios
- │   │   │        ├── model/
- │   │   │        │    └── Game.kt           # Modelo de dados para jogos
- │   │   │        ├── repository/
- │   │   │        │    ├── GameRepository.kt # Funções de acesso e filtro de dados
- │   │   │        │    └── ...
- │   │   │        └── ui/theme/              # Temas e estilos
- │   │   └── res/                            # Recursos (layouts, strings, etc)
- │   └── ...
- └── ...
-```
+---
 
 ## Como funciona
 
@@ -48,17 +46,33 @@ app/
 2. Abra o projeto no Android Studio.
 3. Execute em um emulador ou dispositivo físico Android.
 
+> 💡 Caso utilize o Android Studio, instale a versão mais recente (estável ou preview que suporte AGP 8.12.x) e use **“Sync Project with Gradle Files”** após abrir o projeto.
+
 ## Tecnologias utilizadas
 - **Kotlin**
 - **Jetpack Compose**
 - **Material 3**
 - **Gradle Kotlin DSL**
 
-## Screenshots
+1. **Lista inicial sem filtro**  
+   <img width="786" height="967" alt="Captura de tela tela inicial " src="https://github.com/user-attachments/assets/3af73bda-f9ee-4cc8-953e-4c69f1ca132c" />
 
-> Adicione aqui prints da tela principal, busca e filtro aplicados (opcional).
 
-## Autor
+2. **Filtro ativo por texto (campo de busca)**  
+   <img width="793" height="975" alt="Captura de tela filtro de busca" src="https://github.com/user-attachments/assets/fcc8521d-8568-4280-9ad5-39e4576a7d4e" />
+
+
+3. **Filtro ativo por clique em estúdio (LazyRow)**  
+  <img width="787" height="970" alt="Captura de tela filtro por clique" src="https://github.com/user-attachments/assets/2367a7ab-b466-41a1-b465-771e74a8fdf8" />
+
+
+4. **Gif de funcionamento da aplicação**  
+   ![gif_funcionamento da aplicação](https://github.com/user-attachments/assets/5f0574c5-7156-4edd-83fb-de57fc065554)
+
+
+---
+
+## Créditos:
 - Desenvolvido por Ewerton Carreira.
 
 ---
